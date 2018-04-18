@@ -8,7 +8,7 @@ lsi: false
 exclude: [LICENSE, CNAME, README.md, .gitignore, Gemfile, Gemfile.lock]
 
 # Build settings
-permalink: pretty
+#permalink: pretty
 markdown: kramdown
 
 remote_theme: benbalter/retlab
