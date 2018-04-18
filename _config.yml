@@ -10,4 +10,6 @@ exclude: [LICENSE, CNAME, README.md, .gitignore, Gemfile, Gemfile.lock]
 # Build settings
 permalink: pretty
 markdown: kramdown
-remote_theme: chrisbobbe/jekyll-theme-prologue
+
+remote_theme: benbalter/retlab
+#remote_theme: chrisbobbe/jekyll-theme-prologue
