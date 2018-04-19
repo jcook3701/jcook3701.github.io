@@ -1,15 +1,7 @@
-# Genderal Jekyll Config
-highlighter: rogue
-name: Jared Cook
-description:  cmpe146 mp3 player
-url: "https://jcook3701.github.io/"
-lsi: false
+#theme: jekyll-theme-slate
+remote_theme: chrisbobbe/jekyll-theme-prologue
 
-exclude: [LICENSE, CNAME, README.md, .gitignore, Gemfile, Gemfile.lock]
+baseurl: /CMPE146
+repository: jcook371/CMPE146
 
-# Build settings
-#permalink: pretty
-markdown: kramdown
 
-remote_theme: benbalter/retlab
-#remote_theme: chrisbobbe/jekyll-theme-prologue
