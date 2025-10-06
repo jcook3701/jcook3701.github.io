@@ -1,3 +1,9 @@
+*.bak
+*.old
+*.save
+*.tmp
+*.tmp.*
+
 _site/
 .sass-cache/
 
