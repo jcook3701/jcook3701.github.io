@@ -1,11 +1,13 @@
 <!-- Footer -->
 <footer id="footer">
-
   <ul class="icons">
     {% if site.linkedin_usercode %}
     <li>
-      <a href="https://www.linkedin.com/in/jared-cook-b3585a114/" class="icon circle fa-linkedin">
-	<span class="label">Linkedin</span>
+      <a
+        href="https://www.linkedin.com/in/jared-cook-b3585a114/"
+        class="icon circle fa-linkedin"
+      >
+        <span class="label">Linkedin</span>
       </a>
     </li>
     {% endif %}
@@ -13,16 +15,35 @@
     <!--<li><a href="#" class="icon circle fa-google-plus"><span class="label">Google+</span></a></li>-->
     {% if site.github_username %}
     <li>
-      <a href="https://github.com/{{ site.github_username }}" class="icon circle fa-github">
-	<span class="label">Github</span>
+      <a
+        href="https://github.com/{{ site.github_username }}"
+        class="icon circle fa-github"
+      >
+        <span class="label">Github</span>
       </a>
     </li>
     {% endif %}
+    <li>
+      <script
+        type="text/javascript"
+        src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js"
+        data-name="bmc-button"
+        data-slug="jcook3701r"
+        data-color="#FFDD00"
+        data-emoji=""
+        data-font="Cookie"
+        data-text=""
+        data-outline-color="#000000"
+        data-font-color="#000000"
+        data-coffee-color="#ffffff"
+      ></script>
+    </li>
     <!--<li><a href="#" class="icon circle fa-dribbble"><span class="label">Dribbble</span></a></li>-->
   </ul>
-  
+  {% if site.github_username %}
   <ul class="copyright">
-    <li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+    <li>&copy; {{ site.github_username }}</li>
+    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
   </ul>
-  
+  {% endif %}
 </footer>
