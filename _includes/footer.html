@@ -1,6 +1,6 @@
 <!-- Footer -->
 <footer id="footer">
-  <ul class="icons">
+  <ul class="icons" style="vertical-align: middle">
     {% if site.linkedin_usercode %}
     <li>
       <a
@@ -23,22 +23,37 @@
       </a>
     </li>
     {% endif %}
+    <!-- Buy Me A Coffee Link -->
+    {% if site.buymecoffee_data_slug %}
     <li>
-      <script
-        class="icon circle"
-        type="text/javascript"
-        src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js"
-        data-name="bmc-button"
-        data-slug="jcook3701r"
-        data-color="#FFDD00"
-        data-emoji=""
-        data-font="Cookie"
-        data-text=""
-        data-outline-color="#000000"
-        data-font-color="#000000"
-        data-coffee-color="#ffffff"
-      ></script>
+      <div
+        class="icon circle bmc-wrapper"
+        style="
+          width: 58px;
+          height: 58px;
+          overflow: hidden;
+          border-radius: 50%;
+          display: flex;
+          justify-content: start;
+          align-items: center; /* centers vertically */
+        "
+      >
+        <script
+          type="text/javascript"
+          src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js"
+          data-name="bmc-button"
+          data-slug="{{ site.buymecoffee_data_slug }}"
+          data-color="#FFDD00"
+          data-emoji=""
+          data-font="Cookie"
+          data-text=""
+          data-outline-color="#000000"
+          data-font-color="#000000"
+          data-coffee-color="#ffffff"
+        ></script>
+      </div>
     </li>
+    {% endif %}
     <!--<li><a href="#" class="icon circle fa-dribbble"><span class="label">Dribbble</span></a></li>-->
   </ul>
   {% if site.github_username %}

@@ -10,6 +10,7 @@ url: "http://locahost:4000" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 linkedin_usercode: jared-cook-b3585a114
 github_username: jcook3701
+buymecoffee_data_slug: jcook3701r
 google_analytics: G-C7PWLWSHB9
 
 # Build settings
